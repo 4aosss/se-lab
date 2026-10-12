@@ -28,6 +28,7 @@ public class TorpedoStore {
     }
   }
 
+  // Reuse the Random instance instead of creating a new one for every shot.
   private final Random generator = new Random();
 
   public boolean fire(int numberOfTorpedos){
